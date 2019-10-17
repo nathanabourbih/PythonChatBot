@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1a19d14c-a5cc-46ec-8bad-03517dc90f86</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>PythonChatBot</Name>
+    <RootNamespace>PythonChatBot</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="PythonChatBot\ChatBot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonChatBot\elisa\test_eliza.py" />
+    <Compile Include="runserver.py" />
+    <Compile Include="PythonChatBot\__init__.py" />
+    <Compile Include="PythonChatBot\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PythonChatBot\" />
+    <Folder Include="PythonChatBot\elisa\" />
+    <Folder Include="PythonChatBot\static\" />
+    <Folder Include="PythonChatBot\static\assets\" />
+    <Folder Include="PythonChatBot\static\assets\css\" />
+    <Folder Include="PythonChatBot\static\assets\img\" />
+    <Folder Include="PythonChatBot\static\assets\js\" />
+    <Folder Include="PythonChatBot\static\assets\scss\" />
+    <Folder Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\" />
+    <Folder Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\mixins\" />
+    <Folder Include="PythonChatBot\static\content\" />
+    <Folder Include="PythonChatBot\static\fonts\" />
+    <Folder Include="PythonChatBot\static\scripts\" />
+    <Folder Include="PythonChatBot\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PythonChatBot\elisa\.gitignore" />
+    <Content Include="PythonChatBot\doctor.txt" />
+    <Content Include="PythonChatBot\elisa\LICENSE" />
+    <Content Include="PythonChatBot\elisa\p36-weizenabaum.pdf" />
+    <Content Include="PythonChatBot\elisa\README.md" />
+    <Content Include="PythonChatBot\static\assets\css\bootstrap.min.css" />
+    <Content Include="PythonChatBot\static\assets\css\demo.css" />
+    <Content Include="PythonChatBot\static\assets\css\gsdk-bootstrap-wizard.css" />
+    <Content Include="PythonChatBot\static\assets\img\apple-icon.png" />
+    <Content Include="PythonChatBot\static\assets\img\cambrian.jpg" />
+    <Content Include="PythonChatBot\static\assets\img\default-avatar.png" />
+    <Content Include="PythonChatBot\static\assets\img\favicon.ico" />
+    <Content Include="PythonChatBot\static\assets\img\favicon.png" />
+    <Content Include="PythonChatBot\static\assets\img\new_logo.png" />
+    <Content Include="PythonChatBot\static\assets\img\thumb_list_boat.png" />
+    <Content Include="PythonChatBot\static\assets\img\thumb_list_place.png" />
+    <Content Include="PythonChatBot\static\assets\img\thumb_register.png" />
+    <Content Include="PythonChatBot\static\assets\img\tim_80x80.png" />
+    <Content Include="PythonChatBot\static\assets\img\user-profile.png" />
+    <Content Include="PythonChatBot\static\assets\img\wizard-boat.jpg" />
+    <Content Include="PythonChatBot\static\assets\img\wizard-city.jpg" />
+    <Content Include="PythonChatBot\static\assets\img\wizard.jpg" />
+    <Content Include="PythonChatBot\static\assets\js\bootstrap.min.js" />
+    <Content Include="PythonChatBot\static\assets\js\gsdk-bootstrap-wizard.js" />
+    <Content Include="PythonChatBot\static\assets\js\jquery-1.10.2.js" />
+    <Content Include="PythonChatBot\static\assets\js\jquery-2.2.4.min.js" />
+    <Content Include="PythonChatBot\static\assets\js\jquery.bootstrap.wizard.js" />
+    <Content Include="PythonChatBot\static\assets\js\jquery.validate.min.js" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\mixins\_vendor-prefixes.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_buttons.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_card.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_footers.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_inputs.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_labels.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_misc.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_mixins.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_navs-pagination.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_responsive.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_tooltips.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_typography.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_variables.scss" />
+    <Content Include="PythonChatBot\static\assets\scss\gsdk-bootstrap-wizard\_wizard-card.scss" />
+    <Content Include="PythonChatBot\static\ChatBot.js" />
+    <Content Include="PythonChatBot\static\content\chat.css" />
+    <Content Include="requirements.txt" />
+    <Content Include="PythonChatBot\static\content\bootstrap.css" />
+    <Content Include="PythonChatBot\static\content\bootstrap.min.css" />
+    <Content Include="PythonChatBot\static\content\site.css" />
+    <Content Include="PythonChatBot\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="PythonChatBot\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="PythonChatBot\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="PythonChatBot\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="PythonChatBot\static\scripts\bootstrap.js" />
+    <Content Include="PythonChatBot\static\scripts\bootstrap.min.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery-1.10.2.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="PythonChatBot\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery.validate.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery.validate.min.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="PythonChatBot\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="PythonChatBot\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="PythonChatBot\static\scripts\respond.js" />
+    <Content Include="PythonChatBot\static\scripts\respond.min.js" />
+    <Content Include="PythonChatBot\static\scripts\_references.js" />
+    <Content Include="PythonChatBot\templates\about.html" />
+    <Content Include="PythonChatBot\templates\contact.html" />
+    <Content Include="PythonChatBot\templates\index.html" />
+    <Content Include="PythonChatBot\templates\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

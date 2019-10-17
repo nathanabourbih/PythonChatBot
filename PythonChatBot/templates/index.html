@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!--      Wizard container        -->
+<div class="wizard-container">
+
+    <div class="card wizard-card" data-color="orange" id="wizardProfile">
+            <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+            <div class="wizard-header">
+                <h3>
+                    <b>Python</b> Chat Bot <br>
+                    <small>A web interface for a Python based chat bot.</small>
+                </h3>
+            </div>
+
+            <div style="height: 2px; margin-top: 30px; margin-bottom: 10px; background-color: red;">
+
+
+            </div>
+
+            <div class="row" style="margin: 30px;" id="getName">
+                <h4 class="info-text"> Let's start start with who you are.</h4>
+
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label><b>What is your first name?</b></label>
+                        <input name="name" id="name" type="text" class="form-control" placeholder="Your Name...">
+                    </div>
+                    <p>
+                        <div class="pull-left">
+                            <input type='button' class='btn btn-fill btn-default btn-wd btn-sm' name='namebutton' id="namebutton" value='Start Chatting' />
+                        </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin: 30px;" id="chatWindow">
+                <div class="messaging">
+                    <div class="mesgs">
+                        <div class="msg_history">
+                            
+                        </div>
+                        <div class="type_msg">
+                            <div class="input_msg_write">
+                                <input type="text" class="write_msg" placeholder="Type a message" />
+                                <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+</div> <!-- wizard container -->
+
+{% endblock %}
